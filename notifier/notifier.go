@@ -8,9 +8,9 @@ import (
 	"time"
 
 	"github.com/PagerDuty/go-pagerduty"
-	"github.com/jpweber/cole/configuration"
-	"github.com/jpweber/cole/dmtimer"
-	"github.com/jpweber/cole/slack"
+	"github.com/moveaxlab/cole/configuration"
+	"github.com/moveaxlab/cole/dmtimer"
+	"github.com/moveaxlab/cole/slack"
 	"github.com/prometheus/alertmanager/template"
 
 	log "github.com/sirupsen/logrus"
