@@ -11,7 +11,7 @@ import (
 	"time"
 
 	"github.com/caarlos0/env"
-	"github.com/jpweber/cole/configuration"
+	"github.com/moveaxlab/cole/configuration"
 	"github.com/jpweber/cole/notifier"
 	"github.com/prometheus/client_golang/prometheus/promhttp"
 	log "github.com/sirupsen/logrus"
@@ -20,7 +20,7 @@ import (
 )
 
 const (
-	version = "v0.2.0"
+	version = "v0.2.1"
 )
 
 var (

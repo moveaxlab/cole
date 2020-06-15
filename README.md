@@ -11,8 +11,6 @@ this project is in very early stages and should not be used in production _yet_.
 ## How does it work
 Cole listens for http requests from prometheus alertmanager sending alerts for dream switch alert. When a message is received a timer will be started for the specified duration. If a message is not received from the deadman alert inside of that time duration, it will fire off an alert of it's own.
 
-There is a forthcoming blog post on [jpweber.io](http://jpweber.io/blog
-) on how to leverage a deadman switch alert in your prometheus monitoring and how something like Cole fits in which will provide some more detail in to the thinking of creating a tool like this.
 
 ## Supported alert integrations
 
@@ -104,7 +102,7 @@ docker run -d \
 -e INTERVAL="10" \
 -e HTTP_ENDPOINT="https://hooks.slack.com/services/..." \
 -p 8080:8080 \
-cole:0.2.0
+moveax/cole:0.2.1
 ```
 
 ### Bare binary
@@ -120,6 +118,6 @@ cole:0.2.0
 ## Build locally
 
 * clone the repo
-* `dep ensure -v`
-* `go build`
+* `go get -d -v`
+* `go build .`
 That is it.
